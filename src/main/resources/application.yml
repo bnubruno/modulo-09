@@ -8,5 +8,5 @@ spring:
     hibernate:
       ddl-auto: validate
 modulo09:
-#  github-token: 123456
-  gguse-default-alguma-coisa: true
+  github-token: 123456
+  guse-default-alguma-coisa: true
