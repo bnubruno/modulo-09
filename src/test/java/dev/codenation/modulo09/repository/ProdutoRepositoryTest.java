@@ -4,12 +4,9 @@ import dev.codenation.modulo09.entity.Produto;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.engine.support.discovery.SelectorResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-
-import static org.hamcrest.Matchers.notNullValue;
 
 @SpringBootTest
 public class ProdutoRepositoryTest {
@@ -26,7 +23,7 @@ public class ProdutoRepositoryTest {
 
         Produto result = produtoRepository.save(produto);
 
-        MatcherAssert.assertThat(result.getId(), Matchers.is(55L));
+        MatcherAssert.assertThat(result.getId(), Matchers.is(1L));
     }
 
 }
